@@ -32,7 +32,7 @@ __Blueprint__ is driven by unit testing. Run the tests with command+U.
 
 ## Todo's
 - Add Better Usage Examples.
-- Redo TATLayout's example app with Swift and Blueprint.
+- Redo TATLayout's example app using Swift and Blueprint.
 
 ## License
 This project is under the MIT license.
