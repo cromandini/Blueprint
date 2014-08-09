@@ -60,7 +60,7 @@ constant: CGFloat
 priority: UILayoutPriority
 ```
 
-##### Examples:
+##### Example:
 ```swift
 let topView = UIView()
 topView.backgroundColor = UIColor.blueColor()
