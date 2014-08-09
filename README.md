@@ -19,11 +19,9 @@ There are 2 formats that can be used to declare layout constraints:
 ```
 view.attribute relationOperator view.attribute [ multiplierOperator multiplier ] [ constantOperator constant ] [ ~ priority ]
 view.attribute relation constant [ ~ priority ]
-```
 
+// Where:
 
-Where:
-```
 view: AnyObject! (just like NSLayoutConstraint's convenience initializer)
 
 attribute: NSLayoutAttribute
@@ -60,9 +58,7 @@ constant: CGFloat
 
 priority: UILayoutPriority
 ```
-
-
-Examples:
+###Examples:
 ```swift
 let topView = UIView()
 topView.backgroundColor = UIColor.blueColor()
