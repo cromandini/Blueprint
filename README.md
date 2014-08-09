@@ -15,13 +15,14 @@ __Blueprint__ is a Cocoa Touch Framework, to use it you can:
 But...the real thing is just one file: `DeclarativeLayoutConstraint.swift` so you can add the file to your project/target and that's all!
 
 ## Usage
-There are 2 formats that can be used to declare layout constraints:
+#####There are 2 formats that can be used to declare layout constraints:
 ```
 view.attribute relationOperator view.attribute [ multiplierOperator multiplier ] [ constantOperator constant ] [ ~ priority ]
 view.attribute relation constant [ ~ priority ]
+```
 
-// Where:
-
+##### Where:
+```
 view: AnyObject! (just like NSLayoutConstraint's convenience initializer)
 
 attribute: NSLayoutAttribute
@@ -59,7 +60,7 @@ constant: CGFloat
 priority: UILayoutPriority
 ```
 
-###Examples:
+##### Examples:
 ```swift
 let topView = UIView()
 topView.backgroundColor = UIColor.blueColor()
