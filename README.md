@@ -20,6 +20,8 @@ There are 2 formats that can be used to declare layout constraints:
 view.attribute relationOperator view.attribute [ multiplierOperator multiplier ] [ constantOperator constant ] [ ~ priority ]
 view.attribute relation constant [ ~ priority ]
 ```
+
+
 Where:
 ```
 view: AnyObject! (just like NSLayoutConstraint's convenience initializer)
@@ -58,6 +60,7 @@ constant: CGFloat
 
 priority: UILayoutPriority
 ```
+
 
 Examples:
 ```swift
