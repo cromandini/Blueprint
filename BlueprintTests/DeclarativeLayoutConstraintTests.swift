@@ -16,165 +16,262 @@ class LayoutEquationTests: XCTestCase {
     
     // MARK: - UIView Properties
     
-    func testViewPropertyLeft() {
-        let property = view1.left
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Left, "Attribute should be .Left")
+    func testThatViewLeftGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.left
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Left, "Attribute should be .Left")
     }
     
-    func testViewPropertyRight() {
-        let property = view1.right
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Right, "Attribute should be .Right")
+    func testThatViewRightGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.right
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Right, "Attribute should be .Right")
     }
     
-    func testViewPropertyTop() {
-        let property = view1.top
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Top, "Attribute should be .Top")
+    func testThatViewTopGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.top
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Top, "Attribute should be .Top")
     }
     
-    func testViewPropertyBottom() {
-        let property = view1.bottom
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Bottom, "Attribute should be .Bottom")
+    func testThatViewBottomGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.bottom
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Bottom, "Attribute should be .Bottom")
     }
     
-    func testViewPropertyLeading() {
-        let property = view1.leading
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Leading, "Attribute should be .Leading")
+    func testThatViewLeadingGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.leading
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Leading, "Attribute should be .Leading")
     }
     
-    func testViewPropertyTrailing() {
-        let property = view1.trailing
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Trailing, "Attribute should be .Trailing")
+    func testThatViewTrailingGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.trailing
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Trailing, "Attribute should be .Trailing")
     }
     
-    func testViewPropertyWidth() {
-        let property = view1.width
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Width, "Attribute should be .Width")
+    func testThatViewWidthGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.width
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Width, "Attribute should be .Width")
     }
     
-    func testViewPropertyHeight() {
-        let property = view1.height
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Height, "Attribute should be .Height")
+    func testThatViewHeightGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.height
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Height, "Attribute should be .Height")
     }
     
-    func testViewPropertyCenterX() {
-        let property = view1.centerX
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.CenterX, "Attribute should be .CenterX")
+    func testThatViewCenterXGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.centerX
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.CenterX, "Attribute should be .CenterX")
     }
     
-    func testViewPropertyCenterY() {
-        let property = view1.centerY
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.CenterY, "Attribute should be .CenterY")
+    func testThatViewCenterYGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.centerY
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.CenterY, "Attribute should be .CenterY")
     }
     
-    func testViewPropertyBaseline() {
-        let property = view1.baseline
-        XCTAssert(property.item === view1, "View should be view1")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.Baseline, "Attribute should be .Baseline")
+    func testThatViewBaselineGetsLayoutProperty() {
+        // when
+        let layoutProperty = view1.baseline
+        
+        // then
+        XCTAssert(layoutProperty.item === view1, "View should be view1")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.Baseline, "Attribute should be .Baseline")
     }
     
-    func testViewPropertyFirstBaseline() {
-        let property = view2.firstBaseline
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.FirstBaseline, "Attribute should be .FirstBaseline")
+    func testThatViewFirstBaselineGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.firstBaseline
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.FirstBaseline, "Attribute should be .FirstBaseline")
     }
     
-    func testViewPropertyLeftMargin() {
-        let property = view2.leftMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.LeftMargin, "Attribute should be .LeftMargin")
+    func testThatViewLeftMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.leftMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.LeftMargin, "Attribute should be .LeftMargin")
     }
     
-    func testViewPropertyRightMargin() {
-        let property = view2.rightMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.RightMargin, "Attribute should be .RightMargin")
+    func testThatViewRightMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.rightMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.RightMargin, "Attribute should be .RightMargin")
     }
     
-    func testViewPropertyTopMargin() {
-        let property = view2.topMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.TopMargin, "Attribute should be .TopMargin")
+    func testThatViewTopMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.topMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.TopMargin, "Attribute should be .TopMargin")
     }
     
-    func testViewPropertyBottomMargin() {
-        let property = view2.bottomMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.BottomMargin, "Attribute should be .BottomMargin")
+    func testThatViewBottomMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.bottomMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.BottomMargin, "Attribute should be .BottomMargin")
     }
     
-    func testViewPropertyLeadingMargin() {
-        let property = view2.leadingMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.LeadingMargin, "Attribute should be .LeadingMargin")
+    func testThatViewLeadingMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.leadingMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.LeadingMargin, "Attribute should be .LeadingMargin")
     }
     
-    func testViewPropertyTrailingMargin() {
-        let property = view2.trailingMargin
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.TrailingMargin, "Attribute should be .TrailingMargin")
+    func testThatViewTrailingMarginGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.trailingMargin
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.TrailingMargin, "Attribute should be .TrailingMargin")
     }
     
-    func testViewPropertyCenterXWithinMargins() {
-        let property = view2.centerXWithinMargins
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.CenterXWithinMargins, "Attribute should be .CenterXWithinMargins")
+    func testThatViewCenterXWithinMarginsGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.centerXWithinMargins
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.CenterXWithinMargins, "Attribute should be .CenterXWithinMargins")
     }
     
-    func testViewPropertyCenterYWithinMargins() {
-        let property = view2.centerYWithinMargins
-        XCTAssert(property.item === view2, "View should be view2")
-        XCTAssertEqual(property.attribute, NSLayoutAttribute.CenterYWithinMargins, "Attribute should be .CenterYWithinMargins")
+    func testThatViewCenterYWithinMarginsGetsLayoutProperty() {
+        // when
+        let layoutProperty = view2.centerYWithinMargins
+        
+        // then
+        XCTAssert(layoutProperty.item === view2, "View should be view2")
+        XCTAssertEqual(layoutProperty.attribute, NSLayoutAttribute.CenterYWithinMargins, "Attribute should be .CenterYWithinMargins")
     }
     
     // MARK: - Linear Equation Operators
     
-    func testLeftHandSide() {
+    func testThatFirstItemAndAttributeAreTakenFromLayoutPropertyOnLeftHandSide() {
+        // when
         var c = view1.width == 200
+        
+        // then
         XCTAssert(c.firstItem === view1, "First item should be view1")
         XCTAssertEqual(c.firstAttribute, NSLayoutAttribute.Width, "First attribute should be .Width")
         
+        // when
         c = view1.top == view2.top
+        
+        // then
         XCTAssert(c.firstItem === view1, "First item should be view1")
+        XCTAssertEqual(c.firstAttribute, NSLayoutAttribute.Top, "First attribute should be .Top")
+        
+        // when
+        c = view2.top == view1.top * 0.5 + 200 ~ 900
+        
+        // then
+        XCTAssert(c.firstItem === view2, "First item should be view2")
         XCTAssertEqual(c.firstAttribute, NSLayoutAttribute.Top, "First attribute should be .Top")
     }
     
-    func testRelations() {
-        let attribute1 = view1.width
-        let attribute2 = view2.height
-        let modified = attribute2 * 2
+    func testThatEqualOperatorSetsEqualRelation() {
+        // when
+        let c1 = view1.width == 200
+        let c2 = view1.width == view2.height
+        let c3 = view1.width == view2.height * 2
         
-        XCTAssertEqual((attribute1 == 200).relation, NSLayoutRelation.Equal, "Relation should be .Equal")
-        XCTAssertEqual((attribute1 == attribute2).relation, NSLayoutRelation.Equal, "Relation should be .Equal")
-        XCTAssertEqual((attribute1 == modified).relation, NSLayoutRelation.Equal, "Relation should be .Equal")
-        
-        XCTAssertEqual((attribute1 <= 200).relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
-        XCTAssertEqual((attribute1 <= attribute2).relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
-        XCTAssertEqual((attribute1 <= modified).relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
-        
-        XCTAssertEqual((attribute1 >= 200).relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
-        XCTAssertEqual((attribute1 >= attribute2).relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
-        XCTAssertEqual((attribute1 >= modified).relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
+        // then
+        XCTAssertEqual(c1.relation, NSLayoutRelation.Equal, "Relation should be .Equal")
+        XCTAssertEqual(c2.relation, NSLayoutRelation.Equal, "Relation should be .Equal")
+        XCTAssertEqual(c3.relation, NSLayoutRelation.Equal, "Relation should be .Equal")
     }
     
-    func testRightHandSideWithConstant() {
+    func testThatLessThanOrEqualOperatorSetsLessThanOrEqualRelation() {
+        // when
+        let c1 = view1.width <= 200
+        let c2 = view1.width <= view2.height
+        let c3 = view1.width <= view2.height * 2
+        
+        // then
+        XCTAssertEqual(c1.relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
+        XCTAssertEqual(c2.relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
+        XCTAssertEqual(c3.relation, NSLayoutRelation.LessThanOrEqual, "Relation should be .LessThanOrEqual")
+    }
+    
+    func testThatGreaterThanOrEqualOperatorSetsGreaterThanOrEqualRelation() {
+        // when
+        let c1 = view1.width >= 200
+        let c2 = view1.width >= view2.height
+        let c3 = view1.width >= view2.height * 2
+        
+        // then
+        XCTAssertEqual(c1.relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
+        XCTAssertEqual(c2.relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
+        XCTAssertEqual(c3.relation, NSLayoutRelation.GreaterThanOrEqual, "Relation should be .GreaterThanOrEqual")
+    }
+    
+    func testThatConstraintCanBeCreatedWithConstantOnRightHandSide() {
+        // when
         var c = view1.width == 200
+        
+        // then
         XCTAssertNil(c.secondItem, "Second item should be nil")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.NotAnAttribute, "Second attribute should be .NotAnAttribute")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == -200
+        
+        // then
         XCTAssertNil(c.secondItem, "Second item should be nil")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.NotAnAttribute, "Second attribute should be .NotAnAttribute")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
@@ -182,15 +279,21 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
     }
     
-    func testRightHandSideWithConstantAndPriority() {
+    func testThatConstraintCanBeCreatedWithConstantAndPriorityOnRightHandSide() {
+        // when
         var c = view1.width == 200 ~ 900
+        
+        // then
         XCTAssertNil(c.secondItem, "Second item should be nil")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.NotAnAttribute, "Second attribute should be .NotAnAttribute")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == -200 ~ 900
+        
+        // then
         XCTAssertNil(c.secondItem, "Second item should be nil")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.NotAnAttribute, "Second attribute should be .NotAnAttribute")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
@@ -198,8 +301,11 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
     }
     
-    func testRightHandSideWithAttribute() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyOnRightHandSide() {
+        // when
         let c = view1.width == view2.height
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
@@ -207,15 +313,21 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
     }
     
-    func testRightHandSideWithAttributeAndMultiplier() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyAndMultiplierOnRightHandSide() {
+        // when
         var c = view1.width == view2.height * 2
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, 0, "Constant should be 0")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == view2.height / 2
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
@@ -223,29 +335,41 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
     }
     
-    func testRightHandSideWithAttributeMultiplierAndConstant() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyMultiplierAndConstantOnRightHandSide() {
+        // when
         var c = view1.width == view2.height * 2 + 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == view2.height / 2 + 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == view2.height * 2 - 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, -200, "Constant should be -200")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == view2.height / 2 - 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
@@ -253,15 +377,21 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
     }
     
-    func testRightHandSideWithAttributeMultiplierAndPriority() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyMultiplierAndPriorityOnRightHandSide() {
+        // when
         var c = view1.width == view2.height * 2 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, 0, "Constant should be 0")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == view2.height / 2 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
@@ -269,29 +399,41 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
     }
     
-    func testRightHandSideWithAttributeMultiplierConstantAndPriority() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyMultiplierConstantAndPriorityOnRightHandSide() {
+        // when
         var c = view1.width == view2.height * 2 + 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == view2.height / 2 + 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == view2.height * 2 - 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 2, "Multiplier should be 2")
         XCTAssertEqual(c.constant, -200, "Constant should be -200")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == view2.height / 2 - 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 0.5, "Multiplier should be 0.5")
@@ -299,15 +441,21 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
     }
     
-    func testRightHandSideWithAttributeAndConstant() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyAndConstantOnRightHandSide() {
+        // when
         var c = view1.width == view2.height + 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
         
+        // when
         c = view1.width == view2.height - 200
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
@@ -315,15 +463,21 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 1000, "Priority should be 1000")
     }
     
-    func testRightHandSideWithAttributeConstantAndPriority() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyConstantAndPriorityOnRightHandSide() {
+        // when
         var c = view1.width == view2.height + 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
         XCTAssertEqual(c.constant, 200, "Constant should be 200")
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
         
+        // when
         c = view1.width == view2.height - 200 ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
@@ -331,8 +485,11 @@ class LayoutEquationTests: XCTestCase {
         XCTAssertEqual(c.priority, 900, "Priority should be 900")
     }
     
-    func testRightHandSideWithAttributeAndPriority() {
+    func testThatConstraintCanBeCreatedWithLayoutPropertyAndPriorityOnRightHandSide() {
+        // when
         let c = view1.width == view2.height ~ 900
+        
+        // then
         XCTAssert(c.secondItem === view2, "Second item should be view2")
         XCTAssertEqual(c.secondAttribute, NSLayoutAttribute.Height, "Second attribute should be .Height")
         XCTAssertEqual(c.multiplier, 1, "Multiplier should be 1")
