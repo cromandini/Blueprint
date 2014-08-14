@@ -17,8 +17,8 @@ But...for now...the real thing is just one file: [DeclarativeLayoutConstraint.sw
 ## Usage
 #####There are 2 formats that can be used to declare layout constraints:
 ```
-view.attribute relation view.attribute [ *|/ multiplier ] [ +|- constant ] [ ~ priority ]
-view.attribute relation constant [ ~ priority ]
+view.attribute ==|<=|>= view.attribute [*|/ multiplier] [+|- constant] [~ priority]
+view.attribute ==|<=|>= constant [~ priority]
 ```
 
 ##### Where:
@@ -46,8 +46,6 @@ attribute: NSLayoutAttribute
 	trailingMargin: .TrailingMargin
 	centerXWithinMargins: .CenterXWithinMargins
 	centerYWithinMargins: .CenterYWithinMargins
-
-relation: ==|<=|>=
 
 multiplier: CGFloat
 
