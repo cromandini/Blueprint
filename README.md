@@ -12,7 +12,7 @@ __Blueprint__ is a Cocoa Touch Framework, to use it you can:
 - link `Blueprint.framework`
 - then `import Blueprint`
 
-But...for now...the real thing is just one file: `DeclarativeLayoutConstraint.swift` so you can add the file to your project/target and that's all!
+But...for now...the real thing is just one file: [DeclarativeLayoutConstraint.swift](https://github.com/cromandini/Blueprint/blob/master/Blueprint/DeclarativeLayoutConstraint.swift) so you can add the file to your project/target and that's all!
 
 ## Usage
 #####There are 2 formats that can be used to declare layout constraints:
