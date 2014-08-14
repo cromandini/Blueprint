@@ -23,7 +23,7 @@ view.attribute relation constant [ ~ priority ]
 
 ##### Where:
 ```
-view: AnyObject! (just like NSLayoutConstraint's convenience initializer)
+view: AnyObject! (just like NSLayoutConstraint's items)
 
 attribute: NSLayoutAttribute
 	left = .Left
