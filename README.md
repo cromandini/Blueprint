@@ -17,7 +17,7 @@ But...for now...the real thing is just one file: [DeclarativeLayoutConstraint.sw
 ## Usage
 #####There are 2 formats that can be used to declare layout constraints:
 ```
-view.attribute relationOperator view.attribute [ multiplierOperator multiplier ] [ constantOperator constant ] [ ~ priority ]
+view.attribute relation view.attribute [ *|/ multiplier ] [ +|- constant ] [ ~ priority ]
 view.attribute relation constant [ ~ priority ]
 ```
 
@@ -47,13 +47,9 @@ attribute: NSLayoutAttribute
 	centerXWithinMargins: .CenterXWithinMargins
 	centerYWithinMargins: .CenterYWithinMargins
 
-relationOperator: == | <= | >=
-
-multiplierOperator: * | /
+relation: ==|<=|>=
 
 multiplier: CGFloat
-
-constantOperator: + | -
 
 constant: CGFloat
 
