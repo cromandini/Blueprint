@@ -26,26 +26,26 @@ view.attribute relation constant [ ~ priority ]
 view: AnyObject! (just like NSLayoutConstraint's items)
 
 attribute: NSLayoutAttribute
-	left = .Left
-	right = .Right
-	top = .Top
-	bottom = .Bottom
-	leading = .Leading
-	trailing = .Trailing
-	width = .Width
-	height = .Height
-	centerX = .CenterX
-	centerY = .CenterY
-	baseline = .Baseline
-	firstBaseline = .FirstBaseline
-	leftMargin = .LeftMargin
-	rightMargin = .RightMargin
-	topMargin = .TopMargin
-	bottomMargin = .BottomMargin
-	leadingMargin = .LeadingMargin
-	trailingMargin = .TrailingMargin
-	centerXWithinMargins = .CenterXWithinMargins
-	centerYWithinMargins = .CenterYWithinMargins
+	left: .Left
+	right: .Right
+	top: .Top
+	bottom: .Bottom
+	leading: .Leading
+	trailing: .Trailing
+	width: .Width
+	height: .Height
+	centerX: .CenterX
+	centerY: .CenterY
+	baseline: .Baseline
+	firstBaseline: .FirstBaseline
+	leftMargin: .LeftMargin
+	rightMargin: .RightMargin
+	topMargin: .TopMargin
+	bottomMargin: .BottomMargin
+	leadingMargin: .LeadingMargin
+	trailingMargin: .TrailingMargin
+	centerXWithinMargins: .CenterXWithinMargins
+	centerYWithinMargins: .CenterYWithinMargins
 
 relationOperator: == | <= | >=
 
