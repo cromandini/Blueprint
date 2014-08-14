@@ -1,6 +1,6 @@
 # Declarative layout constraints in Swift.
 
-__Blueprint__ started with the idea to port my Objective-C's [TATLayout](https://github.com/cromandini/TATLayout) library to Swift. But soon the project took its own personality thanks to the awesome features in Swift language and the additions to the constraint based layout system in iOS 8.
+__Blueprint__ started with the idea to port my Objective-C's [TATLayout](https://github.com/cromandini/TATLayout) library to Swift. But soon it changed at all, thanks to awesome features in the Swift language and the additions to the constraint based layout system in iOS 8.
 
 ## Requirements
 iOS 8.0 and Xcode 6 Beta 5
