@@ -3,7 +3,7 @@
 __Blueprint__ started with the idea to port my Objective-C's [TATLayout](https://github.com/cromandini/TATLayout) library to Swift. But soon it changed at all, thanks to the awesome features in the Swift language and the additions to the constraint based layout system in iOS 8.
 
 ## Requirements
-iOS 8.0 and Xcode 6 Beta 5
+iOS 8.0 and Xcode 6.0 GM
 
 ## Installation
 __Blueprint__ is a Cocoa Touch Framework, to use it you can:
